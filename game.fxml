@@ -1,0 +1,54 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<BorderPane fx:id="mainBorderpane" fx:controller="gameMain.Controller"
+            xmlns:fx="http://javafx.com/fxml" >
+        <top>
+            <HBox alignment="CENTER" spacing="10">
+                    <Label text="Welcome to the Guess Game"  textFill="blueviolet" GridPane.rowIndex="0" GridPane.columnIndex="0"
+                           alignment="TOP_CENTER"/>
+            </HBox>
+        </top>
+        <center>
+                <GridPane alignment="CENTER" hgap="10" vgap="10">
+                        <Label text="Enter your guess number: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField  GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="scoreTextField"/>
+
+                        <Button text="Match your guess" fx:id="matchButton" onAction="#clickMatchButton" GridPane.rowIndex="2" />
+
+                        <Label fx:id="resultsofMatch" GridPane.rowIndex="4" GridPane.columnSpan="2" GridPane.rowSpan="4"/>
+
+
+                </GridPane>
+
+
+
+
+                </center>
+        <bottom>
+               <VBox spacing="10">
+                       <HBox  alignment="TOP_CENTER"  >
+                               <Label text="Your Score: " fx:id="scoreLabel"/>
+                               <Label  text="0" fx:id="correctGuesses"/>
+                               <Label text=" OUT OF " />
+                               <Label text="0" fx:id="totalGuesses"/>
+                       </HBox>
+                       <HBox alignment="BASELINE_CENTER">
+                               <Button text="Exit Game" onAction="#exitGame"/>
+                       </HBox>
+               </VBox>
+        </bottom>
+
+        <!--My CSS for the GUI-->
+        <stylesheets>
+                <URL value="@guessgame.css"/>
+        </stylesheets>
+
+</BorderPane>

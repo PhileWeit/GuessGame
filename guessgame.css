@@ -1,0 +1,36 @@
+.root{
+    -fx-font-size: 14px;
+    -fx-font-family: Comic Sans MS;
+    -fx-background-color: #808080;
+
+}
+.button {
+   -fx-background-color:#CD853F; /*#9ACD32;*/
+   -fx-text-fill: #FFE4E1;
+}
+/*
+#input{
+    -fx-background-color:#808080;
+    -fx-text-fill:#FFE4C4;
+}
+#output{
+    -fx-background-color:#CD853F;
+    -fx-text-fill:#778899;
+}
+#result{
+    -fx-font-size:17px;
+    -fx-background-color:#FFF8DC; */
+/*#00FFFF;*//*
+
+    -fx-text-fill:#000000;
+    -fx-font-family:Tahoma ;
+    -fx-font-weight:bold;
+     -fx-pref-width:250px;
+     -fx-pref-height:30px;
+}
+#equalSign{
+    -fx-pref-width:60px;
+    */
+/*-fx-font-size:17px;*//*
+
+
